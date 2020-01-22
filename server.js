@@ -1,8 +1,8 @@
 const express = require("express");
-const path = require("path");
 const exphbs = require("express-handlebars");
-const routes = require("./controllers/controller.js");
 const chalk = require("chalk");
+
+const routes = require("./controllers/controller.js");
 const db = require("./models");
 
 const PORT = process.env.PORT || 8080;

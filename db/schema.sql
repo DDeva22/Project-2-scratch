@@ -5,8 +5,8 @@ USE base;
 
 CREATE TABLE userBase (
 	id INT AUTO_INCREMENT,
-    legal_name VARCHAR(100),
-    user_name VARCHAR(50),
+    legal_name VARCHAR(50),
+    user_name VARCHAR(20),
     user_password VARCHAR(20),
     user_ID VARCHAR(30),
     
@@ -17,6 +17,7 @@ CREATE TABLE userBase (
 CREATE TABLE trip(
 	trip_id INT AUTO_INCREMENT,
     user_ID VARCHAR(30),
+    user_priviledge BOOLEAN,
     trip_name VARCHAR(20),
     budget_total DECIMAL(9,2),
     shared_category_1 VARCHAR(20),
@@ -32,6 +33,7 @@ CREATE TABLE trip(
 
 CREATE TABLE personallist(
 trip_id INT,
+user_ID VARCHAR(30),
 user_ID VARCHAR(30),
 personal_budget DECIMAL(7,2),
 personal_category_1 VARCHAR(20),
