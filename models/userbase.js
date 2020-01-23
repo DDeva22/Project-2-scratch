@@ -1,3 +1,5 @@
+
+
 module.exports = function(sequelize, DataTypes){
     const userBase = sequelize.define("userbase",{
 
@@ -161,21 +163,8 @@ module.exports = function(sequelize, DataTypes){
                 len: [2, 20]
             }
         },
-    }) 
+    }); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    return userBase, userTrip, personalList;
+    return userBase;
+    // , userTrip, personalList;
 };
