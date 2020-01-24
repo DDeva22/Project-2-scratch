@@ -18,7 +18,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 
-db.sequelize.sync({ force: true }).then(function() {
+
+//FORCE FALSE BECAUSE WE DON'T WANT THE TABLE TO DROP IT'S DATA EVERYTIME SERVER RESTARTS
+db.sequelize.sync({ force: false }).then(function() {
     app.listen(PORT, function() {
         console.log(chalk.green(`APP LISTENING: ${PORT}`));
     });

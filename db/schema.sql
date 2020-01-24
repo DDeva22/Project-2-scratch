@@ -1,4 +1,4 @@
-
+DROP DATABASE IF EXISTS base;
 CREATE DATABASE base;
 USE base;
 
@@ -45,8 +45,3 @@ personal_category_6 VARCHAR(20)
 
 );
 
-INSERT INTO userBase(legal_name, user_name, user_password, user_ID ) VALUES ("Dan D", "asdfjkl", "INVADERZIM22", "NBALDKS3M");
-INSERT INTO userBase(legal_name, user_name, user_password, user_ID ) VALUES ("Dan D", "asdfjkl", "INVADERZIM22", "NBALDKS3M");
-INSERT INTO userBase(legal_name, user_name, user_password, user_ID ) VALUES ("Dan D", "asdfjkl", "INVADERZIM22", "NBALDKS3M");
-INSERT INTO userBase(legal_name, user_name, user_password, user_ID ) VALUES ("Dan D", "asdfjkl", "INVADERZIM22", "NBALDKS3M");
-INSERT INTO userBase(legal_name, user_name, user_password, user_ID ) VALUES ("Dan D", "asdfjkl", "INVADERZIM22", "NBALDKS3M");
